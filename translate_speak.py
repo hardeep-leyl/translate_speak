@@ -4,12 +4,13 @@ import playsound
 import gtts
 import googletrans
 
+print("Enter some text in English and we'll translate and speak it in a different language!")
 for key, value in gtts.lang.tts_langs().items():   #a dict
     print(key, value)
 
 print()
 lang = input("Please enter the code for your language (e.g., en-us): ")
-text = input("Please enter some text: ")
+text = input("Enter some text: ")
 print()
 
 translator = googletrans.Translator()
